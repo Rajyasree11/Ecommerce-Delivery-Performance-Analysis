@@ -8,6 +8,8 @@ A Business Analyst project using the **Olist Brazilian E-Commerce Public Dataset
 
 The e-commerce operations team lacks clear visibility into where delivery delays are occurring and whether delayed orders are associated with lower customer satisfaction.
 
+ <img width="1306" height="722" alt="image" src="https://github.com/user-attachments/assets/8bb80975-beb2-4451-bcb7-8bc8561c98af" />
+
 ## ❓ Key Business Questions
 
 1. What is the number of eligible delivered orders?
@@ -16,14 +18,18 @@ The e-commerce operations team lacks clear visibility into where delivery delays
 4. Which customer states have the highest volume of delays?
 5. Are delayed orders associated with lower customer satisfaction?
 
+## 📊 Dataset
+
+**Brazilian E-Commerce Public Dataset by Olist**
+
+Source: [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
 ## 🛠️ Tools Used
 
 - Excel – Data Profiling
 - PostgreSQL & SQL – Data Analysis
 - Power BI – Dashboard & Visualization
 - Word – Business Documentation
-
-  <img width="1306" height="722" alt="image" src="https://github.com/user-attachments/assets/8bb80975-beb2-4451-bcb7-8bc8561c98af" />
 
 
 ## 📊 Key Findings
