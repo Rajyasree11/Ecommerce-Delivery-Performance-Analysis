@@ -23,6 +23,9 @@ The e-commerce operations team lacks clear visibility into where delivery delays
 - Power BI – Dashboard & Visualization
 - Word – Business Documentation
 
+  <img width="1306" height="722" alt="image" src="https://github.com/user-attachments/assets/8bb80975-beb2-4451-bcb7-8bc8561c98af" />
+
+
 ## 📊 Key Findings
 
 - **96,470** eligible delivered orders analysed
