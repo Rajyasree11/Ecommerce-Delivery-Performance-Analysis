@@ -3,6 +3,8 @@ SELECT COUNT(*) AS total_orders
 FROM orders
 WHERE order_status = 'delivered'
 AND order_delivered_customer_date IS NOT NULL;
+/*Result: 96,470 eligible delivered orders*/
+
 
 /* How many delivered orders were delayed compared with those delivered on time? */
 SELECT
@@ -17,6 +19,10 @@ FROM orders
 WHERE order_status = 'delivered'
 AND order_delivered_customer_date IS NOT NULL
 GROUP BY status;
+/*Result:
+-- Delayed: 6,534
+-- On Time: 89,936*/
+
 
 /* When delivery delays occur, what is the average number of days orders are delivered late? */
 SELECT ROUND(AVG(
@@ -28,6 +34,8 @@ WHERE order_status = 'delivered'
 AND order_delivered_customer_date IS NOT NULL
 AND order_delivered_customer_date::date >
     order_estimated_delivery_date::date;
+/*Result: 10.62 days*/
+
 
 /* Which customer states have the highest number of delayed orders?*/
 SELECT
@@ -41,6 +49,7 @@ AND o.order_delivered_customer_date::date >
     o.order_estimated_delivery_date::date
 GROUP BY c.customer_state
 ORDER BY delayed_orders DESC;	
+
 
 /* What is the average customer review score for delayed orders compared with on-time orders?*/
 SELECT
@@ -57,3 +66,8 @@ ON o.order_id = r.order_id
 WHERE o.order_status = 'delivered'
 AND o.order_delivered_customer_date IS NOT NULL
 GROUP BY status;
+/* 
+Result:
+--Delayed	2.27 / 5
+--On Time	4.29 / 5  
+*/
